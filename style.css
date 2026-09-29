@@ -1,0 +1,77 @@
+:root {
+  --bg: #0a0a0a;
+  --card: #14141f;
+  --text: #e8e8ee;
+  --muted: #9a9aa8;
+  --accent: #6c63ff;
+  --amber: #ffc107;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+  padding: 64px 20px 80px;
+}
+main { max-width: 680px; margin: 0 auto; }
+
+.wordmark {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 2px;
+}
+.wordmark span { color: var(--accent); }
+.entity { color: var(--muted); font-size: .9rem; letter-spacing: .04em; text-transform: uppercase; }
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--text);
+  margin: 36px 0 8px;
+  line-height: 1.6;
+}
+.sub { color: var(--muted); margin-bottom: 48px; }
+
+h2 {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+  margin: 48px 0 16px;
+}
+
+.product {
+  display: block;
+  background: var(--card);
+  border: 1px solid #23233a;
+  border-radius: 16px;
+  padding: 24px;
+  text-decoration: none;
+  color: var(--text);
+}
+.product:hover { border-color: var(--accent); }
+.product-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.product-name .dot { color: var(--amber); }
+.product p { color: var(--muted); font-size: .95rem; }
+.product .visit { color: var(--accent); font-size: .9rem; margin-top: 14px; display: inline-block; }
+
+.contact p { margin-bottom: 6px; }
+.contact a { color: var(--accent); text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+address { font-style: normal; color: var(--muted); font-size: .92rem; margin-top: 14px; line-height: 1.5; }
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #1e1e2e;
+  color: var(--muted);
+  font-size: .82rem;
+}
+footer a { color: var(--muted); }
